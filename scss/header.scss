@@ -119,3 +119,65 @@ button, a{
 .btn:active{
 	background-color: #edcc00;
 }
+
+
+#sec_01{
+  background: url(../img/sec_01-bg.png) top center no-repeat;
+  .top{
+    .logo{
+      float: left;
+    }
+    nav{
+      float: left;
+      margin: 35px 0 0 125px;
+      a{
+        display: inline-block;
+        color: #7c97a9;
+        font-family: $Raleway_500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      a+a{margin-left: 12px;}
+      a:hover{
+        color: #fff;
+      }
+    }
+    .call{
+      float: right;
+      width: 190px;
+      height: 40px;
+      border-radius: 19px;
+      background-color: #ffffff;
+      margin-top: 30px;
+
+      color: #165679;
+      font-family: $Raleway_700;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+    }
+    .call:hover{
+      background-color: $main_color;
+      color: #fff;
+    }
+    .call:active{
+      background-color: #06425c;
+    }
+  }
+  .beforeheader{
+    color: #8d5ae6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  h1{
+    color: #ffffff;
+    font-family: $Raleway_700;
+    font-size: 100px;
+    line-height: 78px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}

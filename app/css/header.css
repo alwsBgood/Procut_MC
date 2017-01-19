@@ -1,6 +1,6 @@
 body {
   position: relative;
-  font: 18px/24px "Roboto", sans-serif;
+  font: 18px/24px "Raleway-Regular", sans-serif;
   color: #7b7b7b;
   background-color: #fff; }
 
@@ -93,7 +93,7 @@ button:hover, a:hover {
   height: 60px;
   background-color: #1988cc;
   color: #000;
-  font: 20px "Roboto", sans-serif;
+  font: 20px "Raleway-Regular", sans-serif;
   text-transform: uppercase; }
 
 .btn:hover {
@@ -101,3 +101,53 @@ button:hover, a:hover {
 
 .btn:active {
   background-color: #edcc00; }
+
+#sec_01 {
+  background: url(../img/sec_01-bg.png) top center no-repeat; }
+  #sec_01 .top .logo {
+    float: left; }
+  #sec_01 .top nav {
+    float: left;
+    margin: 35px 0 0 125px; }
+    #sec_01 .top nav a {
+      display: inline-block;
+      color: #7c97a9;
+      font-family: "Raleway-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px; }
+    #sec_01 .top nav a + a {
+      margin-left: 12px; }
+    #sec_01 .top nav a:hover {
+      color: #fff; }
+  #sec_01 .top .call {
+    float: right;
+    width: 190px;
+    height: 40px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    color: #165679;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em; }
+  #sec_01 .top .call:hover {
+    background-color: #1988cc;
+    color: #fff; }
+  #sec_01 .top .call:active {
+    background-color: #06425c; }
+  #sec_01 .beforeheader {
+    color: #8d5ae6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase; }
+  #sec_01 h1 {
+    color: #ffffff;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 100px;
+    line-height: 78px;
+    margin-top: 20px;
+    margin-bottom: 50px; }
