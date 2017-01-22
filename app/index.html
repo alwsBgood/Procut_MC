@@ -29,12 +29,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#8e54ea">
 
 
 
@@ -87,18 +88,20 @@
                         <a href="#sec_09" class="scroll">Отзывы</a>
                     </nav>
                     <div class="call_block">
-                    <a href="tel:0000000000">(000) 000-00-00</a>
+                    <a class="tel" href="tel:0000000000">(000) 000-00-00</a>
                         <a data-modal="modal_callback" class="call md-trigger flex">Заказать звонок</a>
                     </div>
                     <div class="clear"></div>
                 </div>
-                <p class="beforeheader">Мастер-класс от школы монтажа ProCut</p>
-                <h1>Видеомонтаж:</h1>
-                <p class="afterheader_undr">Уверенный</p>
-                <p class="afterheader">старт</p>
-                <a class="md-trigger btn flex" data-modal="modal_callback"><span>Научиться монтировать видео</span></a>
-                <a href="#sec_02" class="scroll"></a>
-                <div class="clear"></div>
+                <div class="content tc">
+                    <p class="beforeheader">Мастер-класс от школы монтажа ProCut</p>
+                    <h1>Видеомонтаж:</h1>
+                    <p class="afterheader_undr">Уверенный</p>
+                    <p class="afterheader">старт</p>
+                    <a class="md-trigger btn flex" data-modal="modal_callback"><span>Научиться монтировать видео</span></a>
+                    <a href="#sec_02" class="ar_dwn scroll"><img src="img/btn-dwn-ar.png" alt="Переход на следующую секцию"></a>
+                    <div class="clear"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -108,28 +111,28 @@
 
 <section id="sec_02">
     <div class="container">
-    <div class="row">
-        <div class="col-6">
-            <h2>Сколько <br /> будет 2+2?</h2>
-            <div class="item">
-                <p class="title">Простой вопрос, не так ли?</p>
-                <p class="text">Все потому, что в школе вы изучали математику, которая <br /> помогает с легкостью считать в уме. Вам не нужно размышлять <br /> и придумывать — вы уже знаете. </p>
+        <div class="row">
+            <div class="col-6">
+                <h2>Сколько <br /> будет 2+2?</h2>
+                <div class="item">
+                    <p class="block_title">Простой вопрос, не так ли?</p>
+                    <p class="text">Все потому, что в школе вы изучали математику, которая <br /> помогает с легкостью считать в уме. Вам не нужно размышлять <br /> и придумывать — вы уже знаете. </p>
+                </div>
+                <div class="item">
+                    <p class="block_title">На мастер-классе <br /> “Легко о сложном в монтаже”</p>
+                    <p class="text">Мы не станем говорить об очевидных вещах, которые легко узнать из бесплатных туториалов. Эксперты ProCut научат <br /> вас математике монтажа, которая поможет вам <br /> систематизировать все знания.</p>
+                </div>
+                <img class="img_2" src="img/sec_02-img-2.png" alt="2 часа">
             </div>
-            <div class="item">
-                <p class="title">На мастер-классе <br /> “Легко о сложном в монтаже”</p>
-                <p class="text">Мы не станем говорить об очевидных вещах, которые легко узнать из бесплатных туториалов. Эксперты ProCut научат <br /> вас математике монтажа, которая поможет вам <br /> систематизировать все знания.</p>
+            <div class="col-6">
+                <img class="img_1" src="img/sec_02-img-1.png" alt="Монтаж видео">
+                <div class="center_block tc">
+                    <p class="block_title">Всего два часа</p>
+                    <p class="text">— и монтаж станет для вас простым и понятным. </p>
+                    <p class="gradient">Вы всегда сможете “посчитать в уме”.</p>
+                </div>
             </div>
-            <img class="img_2" src="img/sec_02-img-2.png" alt="2 часа">
         </div>
-        <div class="col-6">
-            <img class="img_1" src="img/sec_02-img-1.png" alt="Монтаж видео">
-            <div class="center_block tc">
-                <p class="title">Всего два часа</p>
-                <p class="text">— и монтаж станет для вас простым и понятным. </p>
-                <p class="gradient">Вы всегда сможете “посчитать в уме”.</p>
-            </div>
-        </div>
-    </div>
     </div>
 </section>
 
@@ -158,7 +161,7 @@
                 <div class="col-4">
                 <div class="item anim-del-2">
                         <p class="title">Что такое кодеки</p>
-                        <p class="text">И как эффективно с ними работать;</p>
+                        <p class="text">И как эффективно с ними <br /> работать;</p>
                     </div>
                     <div class="item anim-del-5">
                         <p class="title">Как выбрать программы</p>
@@ -225,7 +228,7 @@
 <section id="sec_05">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 tc">
                 <h2>ПРОГРАММА <br /> МАСТЕР-КЛАССА</h2>
             </div>
         </div>
@@ -235,35 +238,35 @@
             </div>
             <div class="col-6">
                 <div class="item">
-                    <p class="title">Что такое post-production</p>
+                    <p class="block_title">Что такое post-production</p>
                     <p class="text">Как он связан с процессом создания видео. <br /> Практические советы по монтажу.</p>
                 </div>
                 <div class="item">
-                    <p class="title">Форматы</p>
+                    <p class="block_title">Форматы</p>
                     <p class="text">Видео и кодеки</p>
                 </div>
                 <div class="item">
-                    <p class="title">C чего начать</p>
+                    <p class="block_title">C чего начать</p>
                     <p class="text">Работу в программе, как правильно задать <br /> параметры проекта. </p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 margined">
                 <div class="item">
-                    <p class="title">Звук</p>
+                    <p class="block_title">Звук</p>
                     <p class="text">Как работать со звуком при монтаже</p>
                 </div>
                 <div class="item">
-                    <p class="title">Стили монтажа</p>
+                    <p class="block_title">Стили монтажа</p>
                     <p class="text">Основные правила комфортного монтажа </p>
                 </div>
                 <div class="item">
-                    <p class="title">Крутые фишки</p>
+                    <p class="block_title">Крутые фишки</p>
                     <p class="text">Для профессиональной программы <br /> монтажа Final Cut Pro X</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 tr">
                 <img src="img/sec_05-img-2.png" alt="Катушки с кино-пленкой" class="img_2">
             </div>
         </div>
@@ -394,7 +397,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2>Всего 2 часа <br /> обучения</h2>
+                <h2>Всего <span>2</span> часа <br /> обучения</h2>
                 <p class="gradient">И вы будете приступать к монтажу, уже зная, <br /> как сделать видео интересным. </p>
                 <a class="md-trigger btn flex" data-modal="modal_callback"><span>НАУЧИТЬСЯ МОНТИРОВАТЬ ВИДЕО</span></a>
             </div>
@@ -410,7 +413,7 @@
 <section id="sec_08">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 tc">
                 <h2>КАК ПОПАСТЬ </h2>
             </div>
 
@@ -421,16 +424,16 @@
             </div>
             <div class="col-6">
                 <div class="item">
-                    <p class="title">Каждый МК от ProCut</p>
-                    <p class="text">Это ограниченное количество участников. <br /> Желающих много. Но мы работаем с небольшими группами, чтобы уделить внимание каждому  <br /> студенту. </p>
+                    <p class="block_title">Каждый МК от ProCut</p>
+                    <p class="text">Это ограниченное количество участников. <br /> Желающих много. Но мы работаем с небольшими <br /> группами, чтобы уделить внимание каждому  <br /> студенту. </p>
                 </div>
             </div>
         </div>
         <div class="row third_row">
             <div class="col-6">
                 <div class="center_block tc">
-                    <p class="title">Следующий мастер-класс</p>
-                    <p class="text">“Видеомонтаж: уверенный старт” мы запланировали  <span>на 24 декабря.</span> </p>
+                    <p class="block_title">Следующий мастер-класс</p>
+                    <p class="text">“Видеомонтаж: уверенный старт” мы запланировали <br />  <span>на 24 декабря.</span> </p>
                     <p class="gradient">Регистрируйтесь сегодня — количество мест ограничено. </p>
                 </div>
             </div>
@@ -446,9 +449,9 @@
 <section id="sec_09">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 tc">
                 <h2>ЧТО ГОВОРЯТ </h2>
-                <p class="bolder_text">Те, кто уже прошел этот мастер-класс</p>
+                <p class="bolder_text title">Те, кто уже прошел этот мастер-класс</p>
             </div>
         </div>
         <div class="row">
@@ -460,7 +463,7 @@
                             <img src="img/testimonial-1.png" alt="">
                         </div>
                         <div class="text_block">
-                            <p class="title"> Светлана Якимец</p><span class="soc"><a target="_blank" href="#">Facebook</a></span>
+                            <p class="title block_title"> Светлана Якимец</p><span class="soc"><a target="_blank" href="#">Facebook</a></span>
                             <p class="text">Монтажом я увлеклась после просмотра шоу “Орел и решка”. Очень понравилась такая эффектная подача видео. Сначала пыталась сама разобраться в программах, вычитать что-то в туториалах, посмотреть на YouTube. Но быстро поняла, что знания получаются “то тут, то там”. Не хватает системы. Мастер-класс от ProCut очень помог <br /> структурировать знания. Я разобралась с секвенцией, тайм-лайнами, обработкой звука. Теперь могу импровизировать и создавать крутые ролики. Спасибо, ProCut!  </p>
                         </div>
                         <div class="clear"></div>
@@ -471,7 +474,7 @@
                             <img src="img/testimonial-2.png" alt="">
                         </div>
                         <div class="text_block">
-                            <p class="title">Денис Костандов</p><span class="soc"><a target="_blank" href="#">Facebook</a></span>
+                            <p class="title block_title">Денис Костандов</p><span class="soc"><a target="_blank" href="#">Facebook</a></span>
                             <p class="text">Как-то возникла необходимость смонтировать видео. Я засел за обзоры программ <br /> монтажа, начал читать… Оказалось, что это очень интересно! На мастер-класс меня <br /> записала девушка  — сказала, что к такому увлечению нужен профессиональный подход. <br /> В ProCut не подвели — очень полезная, структурированная, “уложенная в голову” инфа. <br /> После мастер-класса загорелся, начал снимать и монтировать travel-видео. Доволен! </p>
                         </div>
                         <div class="clear"></div>
@@ -489,7 +492,7 @@
         <div class="row">
             <div class="col-6">
                 <h2>Два часа <br /> обучения <br /> в ProCut</h2>
-                <p class="title">Заменят вам сотни часов <br /> самостоятельной работы, ведь мы: </p>
+                <p class="title block_title">Заменят вам сотни часов <br /> самостоятельной работы, ведь мы: </p>
                 <ul>
                     <li>Объясним все важные детали и моменты;</li>
                     <li>Расскажем, как сэкономить время при монтаже;</li>
@@ -545,10 +548,10 @@
 <section id="sec_11">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-2">
                 <img src="img/logo-btm.png" alt="" class="logo">
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <ul class="out_links">
                     <li><a href="#sec_03" class="scroll">О мастер-классе</a></li>
                     <li><a href="#sec_04" class="scroll">Почему Procut</a></li>
@@ -557,7 +560,7 @@
                     <li><a href="#sec_09" class="scroll">Отзывы</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <ul class="contacts">
                     <li><a target="_blank" class="place" href="http://kids.procut.com.ua/mc/map/">г. Киев, <br> ул. Нижний Вал, 15</a></li>
                     <li><a class="tel" href="tel:+380983413418">+38 098 341 34 18</a></li>
@@ -568,7 +571,7 @@
                     <!-- <li><a href="#"></a></li> -->
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <a data-modal="modal_callback" class="call md-trigger flex">Заказать звонок</a>
             </div>
         </div>

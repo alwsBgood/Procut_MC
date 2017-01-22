@@ -2,15 +2,33 @@
 @import "vars.scss";
 
 //Custom Styles Here
+#sec_02{
+  padding: 190px 0 80px;
+  h2{margin-bottom: 45px}
+  .item{
+    .block_title{margin-bottom: 5px}
+    .text{line-height: 28px;}
+  }
+  .item+.item{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .center_block{
+    background: url(../img/sec_02-block_bg.png) center no-repeat;
+    margin-top: 130px;
+    .text{margin: 10px 0 5px;}
+  }
+}
+
 #sec_03{
-  padding: 145px 0;
+  padding: 90px 0;
   position: relative;
   .wrapper{
     overflow: hidden;
   }
     .paralax_letter{
-      top: -100px;
-      left: 0px;
+      top: -200px;
+      left: 265px;
     }
   h2{
     margin-bottom: 30px;
@@ -18,11 +36,6 @@
   .item{
     opacity: 0;
     .title{margin-bottom: 5px}
-  }
-  .item:hover{
-    color: $main_color;
-    transition: all 0.5s;
-    cursor: default;
   }
   .item+.item{margin-top: 21px}
   .anim-del-1{animation-delay: .1s;}
@@ -33,13 +46,71 @@
   .anim-del-6{animation-delay: .8s;}
   .anim-del-7{animation-delay: .85s;}
   .anim-del-8{animation-delay: 1s;}
+  .img_1{
+    float: right;
+    margin-right: 40px;
+  }
+  .custom{margin-bottom: 55px;}
+  .center_block{
+    margin-top: 30px;
+    .block_title{margin-bottom: 25px;}
+    .text{line-height: 28px;}
+    .item+.item{
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    .btn{
+      width: 290px;
+      margin: 20px auto 0;
+    }
+  }
+}
+
+#sec_04{
+  padding: 100px 0;
+  position: relative;
+  .paralax_letter{
+    right: 250px;
+    top: 0;
+  }
+  h2{margin-bottom: 40px;}
+  .block_title{margin-bottom: 30px;}
+  .item{
+    .text{line-height: 28px;}
+  }
+  .item+.item{
+    margin-top: 10px;
+    margin-bottom: 75px;
+  }
+  .item_big{
+    margin-top: 150px;
+    line-height: 28px;
+  }
+}
+
+#sec_05{
+  padding: 80px 0;
+  h2{
+    margin-bottom: 80px;
+    background-position: bottom center;
+  }
+  .item{
+    margin-top: 53px;
+    line-height: 28px;
+    .block_title{margin-bottom: 5px;}
+  }
+  .item+.item{margin-top: 28px;}
+  .margined{padding-left: 110px;}
+  .img_2{margin: 35px 0 0 -55px;}
 }
 
 #sec_06{
   padding: 85px 0;
   h2{
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    font-size: 48px;
+    background-position: bottom center;
   }
   .item{
     position: relative;
@@ -54,31 +125,37 @@
     .img{
       position: absolute;
       left: 28px;
-      img{width: 40px;}
+      img{width: 30px;}
     }
     .img:before{
       content: "";
       z-index: -1;
       border-radius: 50%;
       position: absolute;
-      width: 42px;
-      height: 42px;
+      width: 38px;
+      height: 38px;
       top: 0;
       left: 13px;
-      background: #feed01;
+      background: #e4dbf6;
     }
   }
   .teacher_photo{
+    margin-top: -40px;
     position: relative;
+    margin-left: 20px;
     .name{
       position: absolute;
       top: 75px;
-      left: 0px;
-      .title{margin-bottom: 5px;}
+      left: -20px;
+      .title{
+        margin-bottom: 5px;
+        font-size: 26px;
+        margin-top: 20px;
+      }
       img{margin: 5px 0 0 -10px;}
     }
   }
-  .item+.item{margin-top: 20px;}
+  .item+.item{margin-top: 30px;}
   .left_block{
     .item{
       background: url(../img/sec_07-left_botder.png) top left no-repeat
@@ -89,39 +166,60 @@
       background: url(../img/sec_07-right_botder.png) top right no-repeat
     }
   }
-  .number{
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-    margin-top: 47px;
-    .current{
-      font: 49px $Raleway_700;
-    }
-  }
-  .slick-next{
-    bottom: 15px;
-    right: 50%;
-    margin-right: -60px;
-  }
-  .slick-prev{
-    bottom: 15px;
-    left: 50%;
-    margin-left: -60px;
-  }
   .mobile{
     display: none;
   }
 }
 
-#sec_09{
-  padding: 100px 0;
+#sec_07{
+  padding: 95px 0;
+  position: relative;
+  .text{line-height: 28px;}
+  h2{
+    margin: 75px 0 40px;
+    span{font-size: 80px;}
+  }
+  .btn{margin-top: 37px;}
+  .paralax_letter{
+    right: 200px;bottom: 300px;
+  }
+}
+
+#sec_08{
+  padding: 90px 0;
   h2{
     text-align: center;
-    margin-bottom: 50px;
+    background-position: bottom center;
+    margin-bottom: 80px;
+  }
+  .item{
+    margin-top: 75px;
+    .block_title{margin-bottom: 10px;}
+    .text{line-height: 28px;}
+  }
+  .center_block{
+    background: url(../img/sec_02-block_bg.png) center no-repeat;
+    margin-top: 70px;
+    line-height: 28px;
+    .text{margin: 20px 0 10px;}
+    span{color: $main_color;}
+  }
+}
+
+#sec_09{
+  padding: 95px 0;
+  h2{
+    text-align: center;
+    padding-bottom: 55px;
+    background-position: bottom center;
+  }
+  .bolder_text{
+    margin-top: -55px;
+    margin-bottom: 65px;
   }
   .slide{
     background-color: #f0f2f6;
-    padding: 65px 40px 60px 120px;
+    padding: 65px 40px 60px 85px;
     .content_block{
       float: left;
       position: relative;
@@ -149,10 +247,11 @@
   }
   .number{
     position: absolute;
-    top: 55px;
-    left: 15px;
+    top: 75px;
+    left: 45px;
     font-size: 20px;
     color: #000;
+    width: 100px;
     margin-top: 47px;
     .current{
       font: 49px $Raleway_700;
@@ -172,27 +271,32 @@
     color: $main_color;
   }
   .slick-next{
-    top: 195px;
-    left: 215px;
+    position: absolute;
+    z-index: 10;
+    top: 210px;
+    left: 200px;
   }
   .slick-prev{
-    top: 195px;
-    left: 105px;
+    position: absolute;
+    z-index: 10;
+    top: 210px;
+    left: 100px;
   }
 }
 
 #sec_10{
-  padding: 100px 0;
+  padding: 115px 0;
   .container{position: relative}
   ._letter{
     right: 140px;
     top: -360px;
   }
   h2{
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
   ul{
     padding-left: 15px;
+    margin-top: 20px;
     li{position: relative;}
     li+li{margin-top: 10px;}
     li:before{
@@ -222,6 +326,7 @@
   }
   form{
     padding: 40px 40px 65px;
+    margin-top: 20px;
     background: #fff;
     text-align: center;
     .field{
@@ -231,7 +336,6 @@
       width: 100%;
     }
     .btn{
-      width: 306px;
       margin: 40px auto 0;
     }
   }
@@ -241,14 +345,39 @@
 #sec_11{
   position: relative;
   overflow: hidden;
-  padding: 90px 0 92px;
+  padding: 75px 0 92px;
   a{
     font: 16px/21px $Raleway_500;
     color: #000;
   }
   a:hover{color: $main_color;}
   .out_links{
-    a{line-height: 24px;}
+    a{
+      color: #9f999c;
+      text-transform: uppercase;
+      position: relative;
+      font-family: $Raleway_500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: .1em;
+    }
+    a:hover{
+      color: $main_color;
+    }
+    a:before{
+      position: absolute;
+      content: '';
+      width: 0px;
+      height: 2px;
+      left: 0px;
+      bottom: -6px;
+      transition: all .4s;
+      background-color: $main_color;
+    }
+    a:hover:before{
+      width: 100%;
+    }
+    li+li{margin-top: 5px;}
   }
   .contacts{
     padding-left: 30px;
@@ -283,37 +412,42 @@
       svg{
         width: 18px;
         height: 28px;
-        fill: #000;
-
+        fill: $main_color;
+        transition: .3s;
+        path{fill: $main_color;}
       }
       path{transition: 0.4s;}
       a:hover{
-        svg path{fill: $main_color;}
+        svg {transform: scale(1.3);}
       }
     }
     li+li{margin-left: 5px;}
   }
   .call{
-    float: right;
-    width: 190px;
-    height: 40px;
-    border-radius: 19px;
-    background-color: #ffffff;
-    margin-top: 45px;
-
-    color: #165679;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    color: $main_color;
+    margin-top: 40px;
     font-family: $Raleway_700;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
-  .call:hover{
-    background-color: $main_color;
-    color: #fff;
+  .call:before{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 2px;
+    left: 0px;
+    bottom: -6px;
+    transition: all .4s;
+    background-image: linear-gradient(to right, #eb3349 0%, #8d54e9 100%);
   }
-  .call:active{
-    background-color: #06425c;
+  .call:hover:before{
+    width: 100%;
   }
 }
 
