@@ -4,6 +4,7 @@
 //Custom Styles Here
 #sec_02{
   padding: 190px 0 80px;
+  overflow: hidden;
   h2{margin-bottom: 45px}
   .item{
     .block_title{margin-bottom: 5px}
@@ -60,7 +61,8 @@
       margin-bottom: 25px;
     }
     .btn{
-      width: 290px;
+      max-width: 290px;
+      width: 100%;
       margin: 20px auto 0;
     }
   }
@@ -183,6 +185,7 @@
   .paralax_letter{
     right: 200px;bottom: 300px;
   }
+  .wrapp{overflow: hidden;}
 }
 
 #sec_08{
@@ -467,8 +470,8 @@ footer{
     margin-top: 5px;
     margin-left: 25px;
     width: 80px;
-    // margin-right: 20px;
     float: right;
+    img{width: 80px;}
   }
   .logo_wcf{
     float: right;

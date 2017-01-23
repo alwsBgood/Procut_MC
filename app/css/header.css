@@ -91,7 +91,8 @@ button:hover, a:hover {
 .btn {
   position: relative;
   overflow: hidden;
-  width: 340px;
+  max-width: 340px;
+  width: 100%;
   height: 54px;
   background-color: #8e54ea;
   -webkit-box-shadow: 0 10px 49px rgba(220, 56, 98, 0.36);
@@ -329,3 +330,94 @@ h2 {
   font-size: 933px;
   line-height: 1040px;
   text-transform: uppercase; }
+
+.container {
+  position: relative;
+  z-index: 10; }
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: .1;
+  top: 0; }
+
+.line.purple {
+  background: #8e54ea; }
+
+.menu {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  width: 45px;
+  top: 50%;
+  left: 20px;
+  background: url(../img/menu-bg.png) top left repeat-y; }
+  .menu li {
+    position: relative;
+    z-index: 10; }
+    .menu li a {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 33px; }
+      .menu li a span {
+        display: block;
+        opacity: 0;
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s;
+        color: #8e54ea;
+        font-family: "DidactGothic", sans-serif;
+        letter-spacing: .2em;
+        font-size: 9px;
+        line-height: 33px;
+        text-transform: uppercase; }
+    .menu li a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      left: 0;
+      background-color: #000;
+      -webkit-transition: opacity .3s;
+      transition: opacity .3s; }
+    .menu li p {
+      -webkit-transition: opacity .3s;
+      transition: opacity .3s;
+      opacity: 0;
+      display: none;
+      position: absolute;
+      top: 50%;
+      margin-top: -13px;
+      left: 45px;
+      width: 131px;
+      height: 26px;
+      color: #000000;
+      font-family: "DidactGothic", sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase; }
+    .menu li p.visible {
+      opacity: 0.5;
+      display: block; }
+  .menu .active a:before {
+    opacity: 0; }
+  .menu .active a span {
+    opacity: 1; }
+  .menu li:nth-child(1) {
+    margin-top: -8px; }
+  .menu li:hover p {
+    opacity: 1; }
+
+.menu:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 205px;
+  opacity: 1 !important; }
+  .menu:hover p {
+    opacity: 0.5;
+    display: block; }

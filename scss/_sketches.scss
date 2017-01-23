@@ -30,12 +30,13 @@ cursor: -webkit-grabbing !important;
     width: 0;
 }
 
-div[id*="modal_callback"]{
+div[id*="modal_callback"], div[id*="modal_subscribe"]{
   max-width: 500px;
   h2{
     font-size: 29px;
     line-height: 36px;
     margin: 30px 30px 0px;
+    background-position: bottom center;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
@@ -48,7 +49,10 @@ div[id*="modal_callback"]{
     display: block;
   }
   .field{
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     input{
       width: 100%;
     }
@@ -184,7 +188,7 @@ div[id*="modal_politics"]{
     position : absolute;
     color : #4e4e4e;
     right:24px;
-    top:-10px;
+    top:-4px;
     opacity: 1;
 }
 
