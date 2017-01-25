@@ -398,6 +398,9 @@
       top: 0px;
       background: url(../img/place.png) center no-repeat;
     }
+    .tel{
+      font-family: $Accuratist;
+    }
     .tel:before{
       position: absolute;
       content: '';

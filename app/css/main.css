@@ -368,6 +368,8 @@
       left: -30px;
       top: 0px;
       background: url(../img/place.png) center no-repeat; }
+    #sec_11 .contacts .tel {
+      font-family: "Accuratist", sans-serif; }
     #sec_11 .contacts .tel:before {
       position: absolute;
       content: '';
@@ -517,6 +519,9 @@ footer {
 .hidden {
   height: 0;
   width: 0; }
+
+[type="tel"] {
+  font-family: "DidactGothic", sans-serif !important; }
 
 div[id*="modal_callback"], div[id*="modal_subscribe"] {
   max-width: 500px; }

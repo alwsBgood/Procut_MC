@@ -30,6 +30,10 @@ cursor: -webkit-grabbing !important;
     width: 0;
 }
 
+[type="tel"]{
+  font-family: $DidactGothic !important;
+}
+
 div[id*="modal_callback"], div[id*="modal_subscribe"]{
   max-width: 500px;
   h2{
@@ -373,6 +377,7 @@ textarea:active+.bar, textarea:focus+.bar{
 .field+.field {
  margin-top: 7px
 }
+
 
 input::-webkit-input-placeholder{
   color: #9F9F9F;
