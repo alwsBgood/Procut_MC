@@ -3,7 +3,7 @@
 
 $leads['request']['leads']['add']=array(
   array(
-    'name'=>'Procut_MC_' .$month_lead. '_' .$year_lead. '_' .$city_event,
+    'name'=>'MK_montage_' .$month_lead. '_' .$year_lead. '_' .$city_event,
     //'date_create'=>1298904164, //optional
     'price'=>$price_lead,
     'custom_fields'=>array(

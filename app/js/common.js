@@ -104,7 +104,7 @@
                 }, 350);
                 dataLayer.push({'event': 'FormSubmit', 'form_type': data_form});
                 setTimeout(function() {
-                    window.location = "http://procut.com.ua/event/mk-nontage/success/"
+                    window.location = "http://procut.com.ua/event/mk-montage/success/"
                 }, 1500);
               }
             });
