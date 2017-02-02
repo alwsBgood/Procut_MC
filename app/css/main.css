@@ -301,12 +301,12 @@
     font-family: "Raleway-Bold", sans-serif;
     color: #8e54ea; }
   #sec_10 .price {
+    font-size: 40px;
+    font-family: "Accuratist", sans-serif;
     color: #000;
-    margin-top: 5px;
-    font: 20px "Raleway-Bold", sans-serif; }
+    margin-top: 40px; }
     #sec_10 .price span {
-      font-family: "Accuratist", sans-serif;
-      font-size: 36px; }
+      font: 24px "Raleway-Bold", sans-serif; }
   #sec_10 form {
     padding: 40px 40px 65px;
     margin-top: 20px;

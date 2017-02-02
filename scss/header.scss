@@ -241,7 +241,7 @@ button, a{
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    margin-top: 155px;
+    margin-top: 135px;
     margin-bottom: 40px;
   }
   h1{
@@ -295,9 +295,17 @@ button, a{
     margin-left: 20px;
   }
   .btn{
-    margin: 115px auto 105px;
+    margin: 115px auto 85px;
+  }
+  .price{
+    font-size: 40px;
+    font-family: $Accuratist;
+    color: #fff;
+    margin-top: 40px;
+    span{font: 24px $Raleway_700;}
   }
 }
+
 
 h2{
   color: #000000;
