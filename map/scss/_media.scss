@@ -1,0 +1,156 @@
+@import "bourbon";
+@import "vars.scss";
+
+@media screen and (max-height: 600px){
+  div[id*="modal_callback"] .md-content, div[id*="modal_subscribe"] .md-content, div[id*="modal_question"] .md-content{
+    padding: 10px;
+  }
+  .field input{
+    padding: 20 0;
+  }
+}
+// 599
+@include for-size(phone-only) {
+  div[id*="modal_callback"] .md-content, div[id*="modal_subscribe"] .md-content, div[id*="modal_question"] .md-content{
+    padding: 10px;
+  }
+  .field input{
+    padding: 20 0;
+  }
+  div[id*="modal_politics"] h2{
+    padding-top: 60px;
+  }
+  [class*="col-"]{width: 100% !important;}
+  body{font-size: 15px;}
+  h2{font: 34px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 21px;
+    line-height: 24px;
+    br{display: none;}
+  }
+  .btn{
+    font-size: 16px;
+    width: 100% !important;
+    max-width: 300px !important;
+  }
+  #sec_01{
+    padding: 0 10px 15px !important;
+    background-size: cover;
+    .top{
+      nav{
+        display: none;
+      }
+    }
+  }
+  #sec_10{
+    padding: 30px 0 0px;
+    .map{
+      height: 250px;
+    }
+  }
+  #sec_11{
+    text-align: center;
+    [class*='col-']+[class*='col-']{
+      margin-top: 20px;
+    }
+    .contacts{padding-left: 0}
+    .call{margin-top: 0;}
+  }
+  footer{
+    text-align: center;
+    .col-9, .col-3{width: 100%;}
+    .politics{
+      float: none;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .footer-fire, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
+    }
+  }
+}
+@media screen and (max-width: 600px){}
+// 600 -899
+@include for-size(tablet-portait-only) {
+  body{font-size: 15px;}
+  h2{font: 34px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .btn{font-size: 16px;}
+  #sec_01{
+    .top{
+      nav{
+        display: none;
+      }
+    }
+    h1{
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+  #sec_10{
+    padding: 20px 0 0;
+    .map{
+      height: 350px;
+    }
+  }
+  #sec_11{
+    [class*='col-']{
+      width: 33.3333%;
+    }
+    .call:before{
+      width: 100%;
+    }
+  }
+  footer{
+    text-align: center;
+    .col-9, .col-3{width: 100%;}
+    .politics{
+      float: none;
+      text-align: center;
+      a{display: block;}
+      a+a{margin-left: 0;}
+    }
+    .footer-fire, .logo_rezart{
+      float: none;
+      margin: 15px 20px 10px;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .paralax_letter, ._letter {
+    display: none;
+  }
+  .map .item{
+    display: none;
+  }
+}
+// 900 - 1199
+@include for-size(tablet-landscape-only) {
+  body{font-size: 16px;}
+  h2{font: 38px/40px "Raleway-Bold", sans-serif;}
+  .title{
+    font-size: 23px;
+    line-height: 28px;
+  }
+  #sec_01{
+    .top{
+      nav{
+        display: none;
+      }
+    }
+  }
+  #sec_11{
+    [class*='col-']{
+      width: 25%;
+    }
+  }
+}
+@media screen and (max-width: 1200px){
+  // .paralax_letter, ._letter{display:none;}
+  .text br{display: none}
+}
