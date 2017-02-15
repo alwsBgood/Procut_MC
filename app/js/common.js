@@ -3,7 +3,7 @@ $(function() {
     $(":input.error").removeClass('error');
     $(".allert").remove();
 
-    var error;
+    var error = 0;
     var btn = $(this);
     var form = btn.closest('form');
     var validaton = btn.closest('form').find('[required]');
