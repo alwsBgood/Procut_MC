@@ -3,7 +3,7 @@
 
 $leads['request']['leads']['add']=array(
   array(
-    'name'=>'MK_montage_' .$city_event .'_' .$year_lead ,
+    'name'=>'Видеомейкинг взрослые' ,
     //'date_create'=>1298904164, //optional
     'price'=>$price_lead,
     'custom_fields'=>array(
