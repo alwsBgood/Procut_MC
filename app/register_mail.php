@@ -94,6 +94,45 @@ $headers .= 'From: procut.com.ua';
 
 mail($recepient, $pagetitle, $message, $headers);
 
+
+
+// SPUTNIK API
+$first_name = $name;
+$email = $mail;
+
+$user = 'es@willcatchfire.com';
+$password = 'wiLL789';
+$subscribe_contact_url = 'https://esputnik.com.ua/api/v1/contact/subscribe';
+$formType = 'MC_Montaj';
+
+$json_value = array("name" => $name, "mail" => $mail, "phone" => $phone);
+
+$json_contact_value = new stdClass();
+$contact = new stdClass();
+$contact->firstName = $first_name;
+$contact->channels = array(array('type' => 'email', 'value' => $email), array('type'=>'sms', 'value' => $phone));
+$groups = $formType;
+$json_contact_value->contact = $contact;
+$json_contact_value->groups = $groups;
+$json_contact_value->formType = $formType;
+send_request($subscribe_contact_url, $json_contact_value, $user, $password);
+
+function send_request($url, $json_value, $user, $password) {
+$ch = curl_init('https://esputnik.com.ua/api/v1/contact/subscribe');
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($json_value));
+curl_setopt($ch, CURLOPT_HEADER, 1);
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept: application/json', 'Content-Type: application/json'));
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch,CURLOPT_USERPWD, $user.':'.$password);
+curl_setopt($ch,CURLOPT_RETURNTRANSFER, 1);
+$output = curl_exec($ch);
+echo($output);
+curl_close($ch);
+
+}
+
+
             // Отправка хука в Slack
 
 $message_to_slack = "
@@ -141,3 +180,5 @@ if($result === false)
 }
 curl_close($ch);
 ?>
+
+
