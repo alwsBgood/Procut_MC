@@ -2,9 +2,9 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <?php
 
+$name = trim($_POST["entry_1976543973"]);
 $mail = trim($_POST["entry_492626147"]);
 $phone = trim($_POST["entry_1738947959"]);
-$name = trim($_POST["entry_1976543973"]);
 $city = trim($_POST["city"]);
 $country = trim($_POST["country"]);
 $data_form = trim($_POST["data_form"]);
@@ -37,7 +37,7 @@ $month_lead = strftime('%B'); #Current month for lead name
 $year_lead = strftime('%Y'); #Current year for lead name
 $price_lead = '380'; #Current year for lead name
 if (empty($name)) {
-	$name = 'Имя не указано ' . $time_submitted;
+  $name = 'Имя не указано ' . $time_submitted;
 }
 
 
@@ -91,50 +91,50 @@ $account_id = "1";
 $mail_query=false;
 $phone_query=false;
 foreach($final_arr as $v) {
-	if ($v['custom_fields'][1]['values'][0]['value'] == $mail) {
-		$mail_query = true;
-		$account_id = $v['id'];
-	}
+  if ($v['custom_fields'][1]['values'][0]['value'] == $mail) {
+    $mail_query = true;
+    $account_id = $v['id'];
+  }
 }
 foreach($final_arr as $v) {
-	if ($v['custom_fields'][0]['values'][0]['value'] == $phone) {
-		$phone_query = true;
-		$account_id = $v['id'];
-	}
+  if ($v['custom_fields'][0]['values'][0]['value'] == $phone) {
+    $phone_query = true;
+    $account_id = $v['id'];
+  }
 }
 
 
 if(!$phone_query && !$mail_query){
-	// совпадений нет, добавляем новый лид+контакт
-	include  'amolead.php'; 
-	include  'amoadd.php'; 
+  // совпадений нет, добавляем новый лид+контакт
+  include  'amolead.php'; 
+  include  'amoadd.php'; 
 }
 else {
-	// mail или phone совпадаeт
-	if ($phone_query && empty($mail)) {
-		// Телефон совпадает, Mail не заполнен
-		include  'amolead.php'; 
-	}
-	if (!$phone_query && empty($mail)) {
-		// Телефон не совпадает, Mail не заполнен
-		include  'amolead.php';
-		include  'amoadd.php'; 
-	}
-		if ($phone_query && !$mail_query) {
-			// Телефон совпадает, Mail не совпадает
-			include  'amolead.php'; 
-			include  'amocontact_mail.php';  
-		}
-		if ($mail_query && !$phone_query) {
-			// Mail совпадает, Телефон не совпадает
-			include  'amolead.php'; 
-			include  'amocontact_phone.php';
-		}
-		if ($phone_query && $mail_query) {
-			// Mail и phone совпадают
-			include  'amolead.php'; 
-			include  'amolead_exist.php'; 
-	}
+  // mail или phone совпадаeт
+  if ($phone_query && empty($mail)) {
+    // Телефон совпадает, Mail не заполнен
+    include  'amolead.php'; 
+  }
+  if (!$phone_query && empty($mail)) {
+    // Телефон не совпадает, Mail не заполнен
+    include  'amolead.php';
+    include  'amoadd.php'; 
+  }
+    if ($phone_query && !$mail_query) {
+      // Телефон совпадает, Mail не совпадает
+      include  'amolead.php'; 
+      include  'amocontact_mail.php';  
+    }
+    if ($mail_query && !$phone_query) {
+      // Mail совпадает, Телефон не совпадает
+      include  'amolead.php'; 
+      include  'amocontact_phone.php';
+    }
+    if ($phone_query && $mail_query) {
+      // Mail и phone совпадают
+      include  'amolead.php'; 
+      include  'amolead_exist.php'; 
+  }
 }
 
 

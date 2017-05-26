@@ -1,3 +1,7 @@
+if (localStorage.name != "undefined"){$('input[name="entry.1976543973"]').val(localStorage.name);}
+if (localStorage.email != "undefined"){$('input[type="email"]').val(localStorage.email);}
+if (localStorage.phone != "undefined"){$('input[type="tel"]').val(localStorage.phone);}
+
 $(function() {
   $("[name=send]").click(function () {
     $(":input.error").removeClass('error');
@@ -11,6 +15,10 @@ $(function() {
     var send_btn = btn.closest('form').find('[name=send]');
     var send_options = btn.closest('form').find('[name=campaign_token]');
     var gd_send_adress = btn.closest('form').find('[name=gd_send_adress]').val();
+
+    localStorage.name = form.find('input[name="entry.1976543973"]').val();
+    localStorage.email = form.find('input[type="email"]').val();
+    localStorage.phone = form.find('input[type="tel"]').val();
 
     var mail_chimp = btn.closest('form').find('[name="entry.492626147"]').val();
     var name_chimp = btn.closest('form').find('[name="entry.1976543973"]').val();
@@ -65,8 +73,9 @@ $(function() {
       $(send_btn).each(function() {
         $(this).attr('disabled', true);
       });
-      var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
-      form.find('.geoloc').val(loc);
+      $.get("http://ipinfo.io", function(response) {
+       $('.geoloc').val(response.city + ', ' + response.country)
+      }, "jsonp");
       var data = form.serialize();
       var data_form = form.attr('data-form');
       var temp_date = new Date();
@@ -149,7 +158,7 @@ $(function() {
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+99 (999) 999-9999");
+ $("input[type='tel']").mask("+38 (099) 999-9999");
 });
 
 

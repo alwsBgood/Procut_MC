@@ -451,6 +451,12 @@ h2{
   }
 }
 
+@media (min-width: 1201px) and (max-width: 1800px){
+  #sec_01{
+    .menu{display: none !important;}
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px){}
 @media (min-width: 768px) and (max-width: 991px){}
 @media (max-width: 767px) {}

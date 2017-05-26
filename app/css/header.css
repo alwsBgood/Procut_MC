@@ -428,3 +428,7 @@ h2 {
   .menu:hover p {
     opacity: 0.5;
     display: block; }
+
+@media (min-width: 1201px) and (max-width: 1800px) {
+  #sec_01 .menu {
+    display: none !important; } }
