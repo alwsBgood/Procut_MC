@@ -3,7 +3,7 @@
 
 $leads['request']['leads']['add']=array(
   array(
-    'name'=>'МК Монтаж' ,
+    'name'=>'MK_FCP_X' ,
     //'date_create'=>1298904164, //optional
     'price'=>$price_lead,
     'custom_fields'=>array(
