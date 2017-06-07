@@ -93,7 +93,7 @@
     margin-top: 10px;
     margin-bottom: 75px; }
   #sec_04 .item_big {
-    margin-top: 150px;
+    margin-top: 120px;
     line-height: 28px; }
 
 #sec_05 {
@@ -983,7 +983,7 @@ input:-ms-input-placeholder {
   #sec_04 .img_1 {
     width: 100%; }
   #sec_04 .item_big {
-    margin-top: 30px; }
+    margin: 30px 0 50px; }
   #sec_04 .img_2 {
     width: 100%;
     max-width: 500px; }
@@ -1130,9 +1130,9 @@ input:-ms-input-placeholder {
     padding-top: 60px; }
     #sec_04 .img_1 {
       float: right;
-      margin-top: 105px; }
+      margin-top: 0px; }
     #sec_04 .item_big {
-      margin-top: 580px; }
+      margin-top: 460px; }
   #sec_05 .img_1 {
     float: right; }
   #sec_05 .margined {

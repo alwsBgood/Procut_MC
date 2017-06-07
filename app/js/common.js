@@ -116,11 +116,11 @@ $(function() {
         url: 'mail.php',
         data: msg,
       });
-      $.ajax({
-        type: 'POST',
-        url: '//procut.us8.list-manage.com/subscribe/post?u=1e626788e6127a795fec70e41&amp;id=346125971d',
-        data: msg,
-      });
+      // $.ajax({
+      //   type: 'POST',
+      //   url: '//procut.us8.list-manage.com/subscribe/post?u=1e626788e6127a795fec70e41&amp;id=346125971d',
+      //   data: msg,
+      // });
       $.ajax({
         type: "POST",
         url:"amo/amocontactlist.php",
@@ -155,11 +155,11 @@ $(function() {
   return false;
 });
 
-//  INPUT TEL MASK
+// //  INPUT TEL MASK
 
-jQuery(function($){
- $("input[type='tel']").mask("+38 (099) 999-9999");
-});
+// jQuery(function($){
+//  $("input[type='tel']").mask("+38 (099) 999-9999");
+// });
 
 
 
